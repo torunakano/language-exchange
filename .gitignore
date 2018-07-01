@@ -5,6 +5,7 @@
 /public/system
 
 /db/mysql/volumes
+/docker/mysql/volumes
 
 .env
 .env.dev
