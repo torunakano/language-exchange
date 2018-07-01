@@ -4,7 +4,7 @@
 !/tmp/.keep
 /public/system
 
-/db/mysql
+/db/mysql/volumes
 
 .env
 .env.dev
