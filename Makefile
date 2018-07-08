@@ -1,3 +1,9 @@
+.PHONY: init
+init:
+	cp .env.dev.sample .env.dev
+	docker-compose build
+	docker-compose up
+
 .PHONY: run
 run:
 	cp .env.dev.sample .env.dev
