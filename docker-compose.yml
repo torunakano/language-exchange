@@ -6,7 +6,7 @@ services:
       - "3306:3306"
     volumes:
       - ./docker/mysql/volumes:/var/lib/mysql
-    env_file: .env
+    env_file: .env.dev
   web:
     build:
       context: .
@@ -18,6 +18,6 @@ services:
       - .:/myapp
     environment:
       RAILS_ENV: development
-    env_file: .env
+    env_file: .env.dev
     depends_on:
       - db
