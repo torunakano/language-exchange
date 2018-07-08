@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## セットアップ
 
-Things you may want to cover:
+- `.env.dev.sample`に必要事項記入
 
-* Ruby version
+- ↓実行で、docker立ち上げ
+```bash
+make init
+```
 
-* System dependencies
+- 別ウィンドウ開いて↓実行(db create、db migrate)
+```
+make run
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
