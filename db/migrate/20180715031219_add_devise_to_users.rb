@@ -11,7 +11,7 @@ class AddDeviseToUsers < ActiveRecord::Migration[5.2]
       t.integer :age
       t.integer :gender,            null:false, default: 0
       t.string  :occupation
-      t.boolean :boolean,           null:false, default: 0
+      t.boolean :paid,           null:false, default: 0
 
       ## Recoverable
       t.string   :reset_password_token
