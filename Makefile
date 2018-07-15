@@ -1,5 +1,5 @@
-.PHONY: init
-init:
+.PHONY: start
+start:
 	cp .env.dev.sample .env.dev
 	docker-compose build
 	docker-compose up
