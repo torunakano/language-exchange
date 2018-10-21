@@ -5,7 +5,7 @@ ruby '2.5.1'
 
 gem 'rails', '~> 5.2.0'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
-
+gem 'bootstrap', '~> 4.1.3'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.2'
