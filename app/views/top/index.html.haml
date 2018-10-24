@@ -1,2 +1,41 @@
-<h1>Top#index</h1>
-<p>Find me in app/views/top/index.html.erb</p>
+%body.no-gutters
+  %home_img
+    = image_tag "home_image", width: "100%"
+  %section
+    .container
+      .row
+        .section-heading.col-lg-12.mx-auto.text-center
+          %h1
+            Sharing and connect to people in the world
+    .container
+      .row
+        .service-description.col-lg-6.col-md-6.text-center
+          %card_icon
+            = image_tag "hi", width: "100px"
+          %p.text-muted.mb-0
+            Connect to the people from all over the wold
+            Sending Hi is the first step to find your language partner
+        .service-description.col-lg-6.col-md-6.text-center
+          %card_icon
+            = image_tag "chat", width: "100px"
+          %p.text-muted.mb-0
+            You can enjoy chatting with native speakers,
+            also help other people learning your language
+        .service-description.col-lg-6.col-md-6.text-center
+          %card_icon
+            = image_tag "location", width: "100px"
+          %p.text-muted.mb-0
+            Make friends here. They might have
+            information that cannot find in guide books
+            and even on the internet
+        .service-description.col-lg-6.col-md-6.text-center
+          %card_icon
+            = image_tag "bulletin-board", width: "100px"
+          %p.text-muted.mb-0
+            Post in community to ask questions or share
+            your favoties topics
+  %section.bg-dark.text-white
+    .container.text-center
+      %h2.mb-4
+        Free message for the first year!
+      %a.btn.btn-light.btn-xl.sr-button{:href => "http://startbootstrap.com/template-overviews/creative/"} Join community!
