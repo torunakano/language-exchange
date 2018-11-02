@@ -1,6 +1,32 @@
 %body.no-gutters
-  %home_img
+  %home_img.position-relative
     = image_tag "home_image", width: "100%"
+  .login-form.position-absolute
+    %form
+      %h2.text-center.text-white
+        Sign in
+      .text-center.social-btn
+        %a.btn.btn-primary.btn-block{:href => "#"}
+          %i.fa.fa-facebook
+          Sign in with
+          %b Facebook
+        %a.btn.btn-danger.btn-block{:href => "#"}
+          %i.fa.fa-google
+          Sign in with
+          %b Google
+      .or-seperator
+        %i or
+      .form-group
+        %button.btn.btn-success.btn-block.login-btn{:type => "submit"} Sign in
+      .clearfix
+        %label.pull-left.checkbox-inline.text-white
+          %input{:type => "checkbox"}/
+          Remember me
+        %a.pull-right.text-success{:href => "#"} Forgot Password?
+      .hint-text.text-white
+        Don't have an account?
+        %a.text-success{:href => "#"} Register Now!
+
   %section
     .container
       .row
